@@ -1,0 +1,11 @@
+Potrebno je pre svega instalirati pytorch putem linka: https://pytorch.org/get-started/locally/
+Build treba da bude stabilan, paket conda, jezik Python, platforma CPU. Svi instalaciju raditi iz anakondine komandne linije.
+
+Nakon uspesne instalacije uraditi sledece:
+Verzije biblioteka koje su korišćene su sve standradne verzije koje se mogu instalirati direktno kroz _Anaconda_ okruženje, osim biblioteke _torchvision_ koja se mora instalirati najnovija verzija u kojoj su dodate novije funkcije i otklonjeni određeni nedostaci. Okruženje _Anaconda_ ne nudi instalaciju najnovije verzije, pa se mora instalirati direktno kroz komandnu liniju (__"Anaconda Prompt (anaconda3)"__). Prvo je potrebno obrisati sve prethodne verzije koje su instalirane, a onda instrukcijom
+"conda install -c pytorch torchvision="0.14.0" "instalirati najnoviju verziju torchvision-a. Standrdnom instalacijom kroz okruženje instalira se torchvision 0.2.2 koji nije optimalan za rad sa svim funkcijama koje su potrebne.
+
+A zatim redom pokrenuti sledece komande
+conda install nltk
+conda install -c conda-forge gym
+conda install -c conda-forge pyglet
